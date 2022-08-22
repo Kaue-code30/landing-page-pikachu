@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Righteous', cursive;
+    
 }   
     
 :root{ 
@@ -29,26 +30,86 @@ body{
     padding-bottom: 24px;
 }
 
-header{background-color: aqua;
+header{
     height: 48px;
     
 }
 .logo{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 16px;
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 2rem;
+    width: 199px;
     
     
 }
 main{
-    background-color: tomato;
+    
+    display: grid;
     flex-grow: 1;
+    grid-template-columns: repeat(12, 1fr);
+    
    
 }
+.tittle{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+    color: var(--white);
+}
 
-footer{background-color: purple;
+.tittle_transparente{
+    font-size: 27vw;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    color: #ffffff50;
+    
+}
+
+.discription{
+    grid-column: 1/7;
+    place-self: center start;
+}
+.discription__tittle{
+    font-size: 4rem;
+}
+
+.discription__text{
+    font-size: 1.2rem;
+}
+
+.tittle_text{
+    font-size: 20vw;
+}
+
+.action{
+    grid-column: 7/-1;
+    place-self: center end;
+    height: 100px;
+    width: 411px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 3rem;
+    text-decoration: none;
+}
+.tittle_pika{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer{
+    display: flex;
     height: 0px;
+    justify-content: center;
+    align-items: center;
 }
