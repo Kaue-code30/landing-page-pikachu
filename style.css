@@ -1,8 +1,11 @@
 /* /* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Righteous', cursive;
 }   
     
 :root{ 
@@ -30,7 +33,16 @@ header{background-color: aqua;
     height: 48px;
     
 }
-
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    
+    
+}
 main{
     background-color: tomato;
     flex-grow: 1;
