@@ -10,7 +10,7 @@
 }   
     
 :root{ 
-    --primary-color: #F5CF06;
+    --primary-color:#F5CF06;;
     --secondary-color: #8E4106;
     --white: #ffffff;
     --space-default: 70px;
@@ -39,7 +39,7 @@ header{
     align-items: center;
     gap: 16px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--white);
     font-size: 2rem;
     width: 199px;
     
@@ -58,10 +58,13 @@ main{
     grid-column: 1/-1;
     place-self: center;
     color: var(--white);
+    font-size: 15vw;
 }
 
+
+
 .tittle_transparente{
-    font-size: 27vw;
+    font-size: 20vw;
     position: absolute;
     left: 50%;
     top: -50%;
@@ -84,7 +87,7 @@ main{
 }
 
 .tittle_text{
-    font-size: 20vw;
+    font-size: 17vw;
 }
 
 .action{
@@ -102,7 +105,9 @@ main{
 }
 .tittle_pika{
     position: absolute;
-    top: 30%;
+    height: 23vw;
+    width: 23vw;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
 }
