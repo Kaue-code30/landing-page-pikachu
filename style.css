@@ -58,13 +58,13 @@ main{
     grid-column: 1/-1;
     place-self: center;
     color: var(--white);
-    font-size: 15vw;
+    font-size: 25vw;
 }
 
 
 
 .tittle_transparente{
-    font-size: 20vw;
+    font-size: 25vw;
     position: absolute;
     left: 50%;
     top: -50%;
@@ -80,10 +80,13 @@ main{
 }
 .discription__tittle{
     font-size: 4rem;
+    color: var(--secondary-color);
 }
 
 .discription__text{
     font-size: 1.2rem;
+    width: 500px;
+    color: var(--secondary-color);
 }
 
 .tittle_text{
@@ -103,13 +106,13 @@ main{
     font-size: 3rem;
     text-decoration: none;
 }
-.tittle_pika{
+.imagePikachu{
     position: absolute;
-    height: 23vw;
-    width: 23vw;
+    /* height: 350px;
+    width: 350px; */
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 footer{
@@ -117,4 +120,54 @@ footer{
     height: 0px;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 960px){
+    :root{
+        --space-default: 30px;
+    }
+    main{
+        grid-template-columns: 1fr;
+        
+    }
+    .tittle{
+        place-self: start center;
+    }
+    .discription{
+        grid-column: 1;
+        grid-row: 2;
+        place-self:center;
+        text-align: center;
+    }
+
+    .action{
+        grid-column:1 ;
+        grid-row: 2;
+        place-self: end center;
+    }
+    .imagePikachu{
+        transform: translate(-50%, -60%);
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media (max-width:640px){
+    .discription__text{
+        display: none;
+    }
+    .tittle{
+        transform: translatey(50px);
+    }
+    .discription__tittle{
+        font-size: 9vw;
+    }
+    .action{
+        width: 100%;
+    }
+    .imagePikachu{
+        width: 80vw;
+
+    }
 }
